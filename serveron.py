@@ -20,6 +20,5 @@ def start_instance(instance_ocid):
         print(f'Error starting instance {instance_ocid}: {str(e)}')
 
 if __name__ == '__main__':
-    # Cinema server
-    instance_ocid = 'ocid1.instance.oc1.ap-tokyo-1.anxhiljrrf6sm3ycg6r73m5rnteeo6mccshpmqqvz7gk6zjbzwtmbnzcbczq'
+    instance_ocid = 'instance_ocid'
     start_instance(instance_ocid)
