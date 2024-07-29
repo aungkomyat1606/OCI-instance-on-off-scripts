@@ -42,7 +42,15 @@ oci os ns get
 
 # Now I have Two scripts, one turn instance on and the other one turn the instance off
 
+<!-- Setup Python and pip env -->
+
 <!-- Please change the instance_ocid according to your need. -->
 Example:     instance_ocid = 'ocid1.instance.oc1.ap-tokyo-1.anxhiljrrf6sm3ycg6r73m5rnteeo6mccshpmqqvz7gk6zjbzwtmbnzcbczq'
 
 <!-- Run those scripts with crontab -->
+<!-- copy and paste this  -->
+
+# 6 AM server on /// 8 PM server off
+
+30 23 * * * /usr/bin/python3 /home/akm/server/serveron.py >> /home/akm/server/logs/serveron.log
+30 02 * * * /usr/bin/python3 /home/akm/server/serveroff.py >> /home/akm/server/logs/serveroff.log
