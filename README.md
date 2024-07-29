@@ -1,4 +1,4 @@
-# OCI sevrer on off scripts
+# OCI server on off scripts
 The scripts and features that I use on oracle cloud infrastructure to automate processes.
 
 # Set up Oracle CLI
