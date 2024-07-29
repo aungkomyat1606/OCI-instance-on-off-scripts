@@ -56,6 +56,6 @@ Example:     instance_ocid = 'ocid1.instance.oc1.ap-tokyo-1.anxhiljrrf6sm3ycg6r7
 
 # 6 AM server on & 8 PM server off
 
-```30 23 * * * /usr/bin/python3 /home/akm/server/serveron.py >> /home/akm/server/logs/serveron.log ```
+```30 23 * * * /usr/bin/python3 /path/to/file/serveron.py >> /path/to/file/serveron.log ```
 
-```30 02 * * * /usr/bin/python3 /home/akm/server/serveroff.py >> /home/akm/server/logs/serveroff.log```
+```30 02 * * * /usr/bin/python3 /path/to/file/serveroff.py >> /path/to/file/serveroff.log```
