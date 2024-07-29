@@ -49,12 +49,13 @@ Now I have Two scripts, one turn instance on and the other one turn the instance
 Dont forget to Setup Python and pip env.
 
 <!-- Please change the instance_ocid according to your need. -->
-Example:     instance_ocid = 'ocid1.instance.oc1.ap-tokyo-1.anxhiljrrf6sm3ycg6r73m5rnteeo6mccshpmqqvz7gk6zjbzwtmbnzcbczq'
 
 <!-- Run those scripts with crontab -->
 <!-- copy and paste this  -->
 
 # 6 AM server on & 8 PM server off
+
+Run This with Crontab
 
 ```30 23 * * * /usr/bin/python3 /path/to/file/serveron.py >> /path/to/file/serveron.log ```
 
