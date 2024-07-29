@@ -42,7 +42,7 @@ Check fingerprint if they match or not.
 ```oci os ns get```
 
 
-<!-- You shoud get an data output -->
+You shoud get an data output
 
 Now I have Two scripts, one turn instance on and the other one turn the instance off with the file name of serveroff.py and serveron.py
 
