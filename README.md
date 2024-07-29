@@ -1,33 +1,32 @@
 # OCIscripts
-the scripts and features that i use on oracle cloud infrastructure
+The scripts and features that I use on oracle cloud infrastructure to automate processes.
 
 # Set up Oracle CLI
 
-# install oci cli for linux
+# install OCI CLI for linux
 
 <!-- log into linux terminal -->
 
-bash -c "$(curl -L https://raw.githubusercontent.com/oracle/oci-cli/master/scripts/install/install.sh)"
-
+```bash -c "$(curl -L https://raw.githubusercontent.com/oracle/oci-cli/master/scripts/install/install.sh)"
+```
 <!-- press enter to set everything default -->
 
-# configuration of oci
+# Configuration of oci
 
-oci -v
-oci os ns get 
+```oci -v
+oci os ns get ```
 
-# Y to creating a new config file
+Y to creating a new config file
 
-oci setup config
+```oci setup config```
 
-<!-- 
-1   user ocid
+<!-- 1   user ocid
 2   tenancy ocid
 3   Region 
 4   create new api signing rsa key pair Y
 press enter to destination and name 
-now go and copy that public key  
--->
+now go and copy that public key   -->
+
 
 <!-- Go to OCI console 
 at User Page > Resources > API Keys
@@ -40,7 +39,7 @@ oci os ns get
 
 <!-- You shoud get an data output -->
 
-# Now I have Two scripts, one turn instance on and the other one turn the instance off
+Now I have Two scripts, one turn instance on and the other one turn the instance off
 
 <!-- Setup Python and pip env -->
 
@@ -52,5 +51,6 @@ Example:     instance_ocid = 'ocid1.instance.oc1.ap-tokyo-1.anxhiljrrf6sm3ycg6r7
 
 # 6 AM server on /// 8 PM server off
 
-30 23 * * * /usr/bin/python3 /home/akm/server/serveron.py >> /home/akm/server/logs/serveron.log
-30 02 * * * /usr/bin/python3 /home/akm/server/serveroff.py >> /home/akm/server/logs/serveroff.log
+```30 23 * * * /usr/bin/python3 /home/akm/server/serveron.py >> /home/akm/server/logs/serveron.log
+
+30 02 * * * /usr/bin/python3 /home/akm/server/serveroff.py >> /home/akm/server/logs/serveroff.log```
